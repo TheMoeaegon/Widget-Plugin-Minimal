@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "MyPlugin widget",
+  "SystemName": "Widgets.MyPlugin",
+  "Version": "1.0.0",
+  "SupportedVersions": [ "4.90" ],
+  "Author": "TheMoeaegon",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.MyPlugin.dll",
+  "Description": "This is the simple Plugin"
+}
