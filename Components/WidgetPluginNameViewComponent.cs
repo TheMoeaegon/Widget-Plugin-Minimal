@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Nop.Web.Framework.Components;
 
-namespace Nop.Plugin.Widgets.MyPlugin.Components;
+namespace Nop.Plugin.Widgets.PluginName.Components;
 
-public class WidgetMyPluginViewComponent : NopViewComponent
+public class WidgetPluginNameViewComponent : NopViewComponent
 {
 
     #region Ctor
-    public WidgetMyPluginViewComponent() { }
+    public WidgetPluginNameViewComponent() { }
 
     #endregion
 
@@ -16,7 +16,7 @@ public class WidgetMyPluginViewComponent : NopViewComponent
     /// <returns>A task that represents the asynchronous operation</returns>
     public async Task<IViewComponentResult> InvokeAsync(string widgetZone, object additionalData)
     {
-        return View("~/Plugins/Widgets.MyPlugin/Views/Index.cshtml");
+        return View("~/Plugins/Widgets.PluginName/Views/Index.cshtml");
     }
 
     #endregion

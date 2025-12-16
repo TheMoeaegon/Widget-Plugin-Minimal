@@ -1,17 +1,18 @@
-﻿using Nop.Plugin.Widgets.MyPlugin.Components;
-using Nop.Services.Cms;
+﻿using Nop.Services.Cms;
 using Nop.Services.Plugins;
 using Nop.Web.Framework.Infrastructure;
 
-namespace Nop.Plugin.Widgets.MyPlugin;
+using Nop.Plugin.Widgets.PluginName.Components;
 
-public class MyPlugin : BasePlugin, IWidgetPlugin
+namespace Nop.Plugin.Widgets.PluginName;
+
+public class PluginName: BasePlugin, IWidgetPlugin
 {
     public bool HideInWidgetList => throw new NotImplementedException();
 
     public Type GetWidgetViewComponent(string widgetZone)
     {
-        return typeof(WidgetMyPluginViewComponent);
+        return typeof(WidgetPluginNameViewComponent);
     }
 
     public Task<IList<string>> GetWidgetZonesAsync()
